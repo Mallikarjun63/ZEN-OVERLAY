@@ -1,8 +1,7 @@
 venv/
 __pycache__/
 *.pyc
-assets/ai_temp/
-assets/user_final_mix.mkv
-assets/final_ai_*.mkv
+assets/*
+!assets/.gitkeep
 .DS_Store
 .env
