@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+assets/ai_temp/
+assets/user_final_mix.mkv
+assets/final_ai_*.mkv
+.DS_Store
+.env
