@@ -120,4 +120,4 @@ if __name__ == "__main__":
     # Ensure assets directory exists for saving dummy
     os.makedirs("assets", exist_ok=True)
     print("Starting Web UI... Check your browser!")
-    demo.launch(server_name="127.0.0.1", server_port=7860, show_error=True)
+    demo.launch(server_name="0.0.0.0", server_port=7860, show_error=True)

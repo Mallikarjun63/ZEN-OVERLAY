@@ -29,31 +29,45 @@ ZEN-OVERLAY is a professional-grade automated pipeline designed to translate and
 
 ## 📥 Installation & Setup
 
-### 1. Prerequisites
-Ensure you have **FFmpeg** installed on your system:
-```bash
-# On Mac
-brew install ffmpeg
-```
+### Option A: Using Docker (Recommended)
+The easiest way to run the application with all dependencies (including FFmpeg) is via Docker.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mallikarjun63/ZEN-OVERLAY.git
+   cd ZEN-OVERLAY
+   ```
+2. Build the Docker image:
+   ```bash
+   docker build -t zen-overlay .
+   ```
+3. Run the container:
+   ```bash
+   docker run -p 7860:7860 zen-overlay
+   ```
+4. Open your browser and navigate to `http://localhost:7860`.
 
-### 2. Clone the Repository
-```bash
-git clone https://github.com/Mallikarjun63/ZEN-OVERLAY.git
-cd ZEN-OVERLAY
-```
-
-### 3. Setup Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 4. Run the Application
-```bash
-python app.py
-```
-Open your browser and navigate to `http://127.0.0.1:7860`.
+### Option B: Local Installation
+1. Install **FFmpeg** on your system:
+   ```bash
+   # On Mac
+   brew install ffmpeg
+   ```
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/Mallikarjun63/ZEN-OVERLAY.git
+   cd ZEN-OVERLAY
+   ```
+3. Setup Virtual Environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+4. Run the Application:
+   ```bash
+   python app.py
+   ```
+   Open your browser and navigate to `http://127.0.0.1:7860`.
 
 ---
 
